@@ -1,0 +1,25 @@
+<block-ui>
+  <div *ngIf="currentCountry">
+    <div class="landscape">
+      <img align="middle" src={{currentCountry.flag}}>
+    </div>
+
+    <div style="padding:70px">
+      <h1>
+        Country name : {{ currentCountry.name }}
+      </h1>
+      <h3> Capital : {{ currentCountry.capital}}</h3>
+      <h3> Region : {{ currentCountry.region }}</h3>
+      <h3> Sub Region : {{ currentCountry.subregion }}</h3>
+      <h3> Currency : {{ currentCountry.currencies[0].code }}</h3>
+      <h3> Calling Code : {{ currentCountry.callingCodes[0]}}</h3>
+      <h3> Time Zone : {{ currentCountry.timezones[0] }}</h3>
+      <h3> Language : {{ currentCountry.languages[0].nativeName}}</h3>
+
+
+    </div>
+
+
+  </div>
+</block-ui>
+
